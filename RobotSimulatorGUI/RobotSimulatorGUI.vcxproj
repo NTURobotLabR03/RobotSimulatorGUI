@@ -1,0 +1,216 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{6BF355FF-591E-44CB-8466-BA2D6207A1BE}</ProjectGuid>
+    <RootNamespace>RobotSimulatorGUI</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="PropertySheet\bullet_x64d.props" />
+    <Import Project="PropertySheet\Eigen.props" />
+    <Import Project="PropertySheet\freeGlut_x64d.props" />
+    <Import Project="PropertySheet\qhull_x64d.props" />
+    <Import Project="PropertySheet\thisProj.props" />
+    <Import Project="PropertySheet\KinectSDK.props" />
+    <Import Project="PropertySheet\PCL1.7.2.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="PropertySheet\bullet_x64.props" />
+    <Import Project="PropertySheet\Eigen.props" />
+    <Import Project="PropertySheet\freeGlut_x64.props" />
+    <Import Project="PropertySheet\qhull_x64.props" />
+    <Import Project="PropertySheet\thisProj.props" />
+    <Import Project="PropertySheet\KinectSDK.props" />
+    <Import Project="PropertySheet\PCL1.7.2.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0404</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>Full</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <OpenMPSupport>true</OpenMPSupport>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0404</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Calibration.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="RobotSimulatorGUI.h" />
+    <ClInclude Include="RobotSimulatorGUIDlg.h" />
+    <ClInclude Include="src\PCL\Kinect.h" />
+    <ClInclude Include="src\PCL\kinect_grabber.h" />
+    <ClInclude Include="src\PCL\pcl_function.h" />
+    <ClInclude Include="src\Simulator\ArmRRT.h" />
+    <ClInclude Include="src\Simulator\BulletHeader.h" />
+    <ClInclude Include="src\Simulator\ContactInfo.h" />
+    <ClInclude Include="src\Simulator\ContactMgr.h" />
+    <ClInclude Include="src\Simulator\ContactSimulator.h" />
+    <ClInclude Include="src\Simulator\DebugDrawer.h" />
+    <ClInclude Include="src\Simulator\EigenHeader.h" />
+    <ClInclude Include="src\Simulator\frame.h" />
+    <ClInclude Include="src\Simulator\FreeGlutCallback.h" />
+    <ClInclude Include="src\Simulator\FreeGlutHeader.h" />
+    <ClInclude Include="src\Simulator\FrictionCone.h" />
+    <ClInclude Include="src\Simulator\GlDrawcallback.h" />
+    <ClInclude Include="src\Simulator\GraspGenerator.h" />
+    <ClInclude Include="src\Simulator\GraspPlanningSimulator.h" />
+    <ClInclude Include="src\Simulator\GraspPoseGenerator.h" />
+    <ClInclude Include="src\Simulator\GraspWrenchSpaceQualityMeasure.h" />
+    <ClInclude Include="src\Simulator\HandArmState.h" />
+    <ClInclude Include="src\Simulator\Object.h" />
+    <ClInclude Include="src\Simulator\PathPlayBack.h" />
+    <ClInclude Include="src\Simulator\QhullHeader.h" />
+    <ClInclude Include="src\Simulator\rnGen.h" />
+    <ClInclude Include="src\Simulator\robot.h" />
+    <ClInclude Include="src\Simulator\RobotArm.h" />
+    <ClInclude Include="src\Simulator\RobotHand.h" />
+    <ClInclude Include="src\Simulator\RRT.h" />
+    <ClInclude Include="src\Simulator\RRTSmoother.h" />
+    <ClInclude Include="src\Simulator\Simulator.h" />
+    <ClInclude Include="src\Simulator\TrajectoryPlanningSimulator.h" />
+    <ClInclude Include="src\Simulator\trajPlan.h" />
+    <ClInclude Include="src\Simulator\UISimulator.h" />
+    <ClInclude Include="src\Simulator\WrenchGenerator.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="ThreadControl.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Calibration.cpp" />
+    <ClCompile Include="RobotSimulatorGUI.cpp" />
+    <ClCompile Include="RobotSimulatorGUIDlg.cpp" />
+    <ClCompile Include="src\PCL\Kinect.cpp" />
+    <ClCompile Include="src\PCL\kinect_grabber.cpp" />
+    <ClCompile Include="src\PCL\pcl_function.cpp" />
+    <ClCompile Include="src\Simulator\ArmRRT.cpp" />
+    <ClCompile Include="src\Simulator\ContactInfo.cpp" />
+    <ClCompile Include="src\Simulator\ContactMgr.cpp" />
+    <ClCompile Include="src\Simulator\ContactSimulator.cpp" />
+    <ClCompile Include="src\Simulator\DebugDrawer.cpp" />
+    <ClCompile Include="src\Simulator\EigenAssist.cpp" />
+    <ClCompile Include="src\Simulator\frame.cpp" />
+    <ClCompile Include="src\Simulator\FreeGlutAssist.cpp" />
+    <ClCompile Include="src\Simulator\FrictionCone.cpp" />
+    <ClCompile Include="src\Simulator\GraspGenerator.cpp" />
+    <ClCompile Include="src\Simulator\GraspPlanningSimulator.cpp" />
+    <ClCompile Include="src\Simulator\GraspPoseGenerator.cpp" />
+    <ClCompile Include="src\Simulator\GraspWrenchSpaceQualityMeasure.cpp" />
+    <ClCompile Include="src\Simulator\HandArmState.cpp" />
+    <ClCompile Include="src\Simulator\Object.cpp" />
+    <ClCompile Include="src\Simulator\PathPlayBack.cpp" />
+    <ClCompile Include="src\Simulator\rnGen.cpp" />
+    <ClCompile Include="src\Simulator\RoboHand.cpp" />
+    <ClCompile Include="src\Simulator\robot.cpp" />
+    <ClCompile Include="src\Simulator\RobotArm.cpp" />
+    <ClCompile Include="src\Simulator\RRT.cpp" />
+    <ClCompile Include="src\Simulator\RRTSmoother.cpp" />
+    <ClCompile Include="src\Simulator\Simulator.cpp" />
+    <ClCompile Include="src\Simulator\TrajectoryPlanningSimulator.cpp" />
+    <ClCompile Include="src\Simulator\trajPlan.cpp" />
+    <ClCompile Include="src\Simulator\UISImulator.cpp" />
+    <ClCompile Include="src\Simulator\WrenchGenerator.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="ThreadControl.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="RobotSimulatorGUI.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\RobotSimulatorGUI.rc2" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\RobotSimulatorGUI.ico" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="RobotSimulatorGUI.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

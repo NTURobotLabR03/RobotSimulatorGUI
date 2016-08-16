@@ -1,0 +1,315 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="原始程式檔">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="標頭檔">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="資源檔">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="原始程式檔\MFC">
+      <UniqueIdentifier>{bccc0c39-0c1b-4c50-8ead-0cd769ba4da1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="標頭檔\MFC">
+      <UniqueIdentifier>{4c1e1a65-2ae8-4910-a74c-c193f1901aa3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="原始程式檔\Simulator">
+      <UniqueIdentifier>{b4f63d1e-4a8b-44a2-b003-5ddf964a06a5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="標頭檔\Simulator">
+      <UniqueIdentifier>{ab970c5d-0330-4772-9d24-18bdc4260db6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="原始程式檔\Simulator\Contact">
+      <UniqueIdentifier>{e422f88c-cf4d-4d3c-854d-e40ef4e0158e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="原始程式檔\Simulator\Grasp">
+      <UniqueIdentifier>{70ca9a58-e96d-4b15-8e88-e5ee6cd49665}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="原始程式檔\Simulator\Robot">
+      <UniqueIdentifier>{be4b9e5f-5173-48b5-95e1-985d5159b2d1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="原始程式檔\Simulator\Simulator">
+      <UniqueIdentifier>{fe6d2574-31e5-4fc1-bf91-22502c8e5748}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="標頭檔\Simulator\Contact">
+      <UniqueIdentifier>{cd1b15f7-04fd-4d0c-9a07-4836610be1a1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="標頭檔\Simulator\Grasp">
+      <UniqueIdentifier>{191144ce-c7ca-4a05-9028-69fc9c4b9594}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="標頭檔\Simulator\Robot">
+      <UniqueIdentifier>{b3cea52a-2421-41f4-b2c7-70f6021fb932}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="標頭檔\Simulator\Simulator">
+      <UniqueIdentifier>{3c490f21-1097-4960-a2ce-73621e363752}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="原始程式檔\Simulator\Path">
+      <UniqueIdentifier>{05cac1b2-a586-49a3-b892-1e08e38882d3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="標頭檔\Simulator\Path">
+      <UniqueIdentifier>{5aea7937-e7b4-430c-a11c-7db06a6e7d57}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="原始程式檔\PCL">
+      <UniqueIdentifier>{1e1a363c-3776-4908-a18c-f03d1b6cac8b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="標頭檔\PCL">
+      <UniqueIdentifier>{af4055f3-ba7a-4c24-8576-d148b5d0b9c1}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Resource.h">
+      <Filter>標頭檔\MFC</Filter>
+    </ClInclude>
+    <ClInclude Include="RobotSimulatorGUI.h">
+      <Filter>標頭檔\MFC</Filter>
+    </ClInclude>
+    <ClInclude Include="RobotSimulatorGUIDlg.h">
+      <Filter>標頭檔\MFC</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>標頭檔\MFC</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>標頭檔\MFC</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Simulator\BulletHeader.h">
+      <Filter>標頭檔\Simulator</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Simulator\EigenHeader.h">
+      <Filter>標頭檔\Simulator</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Simulator\FreeGlutHeader.h">
+      <Filter>標頭檔\Simulator</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Simulator\QhullHeader.h">
+      <Filter>標頭檔\Simulator</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Simulator\ContactInfo.h">
+      <Filter>標頭檔\Simulator\Contact</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Simulator\ContactMgr.h">
+      <Filter>標頭檔\Simulator\Contact</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Simulator\FrictionCone.h">
+      <Filter>標頭檔\Simulator\Contact</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Simulator\GraspWrenchSpaceQualityMeasure.h">
+      <Filter>標頭檔\Simulator\Contact</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Simulator\WrenchGenerator.h">
+      <Filter>標頭檔\Simulator\Contact</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Simulator\GraspGenerator.h">
+      <Filter>標頭檔\Simulator\Grasp</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Simulator\GraspPoseGenerator.h">
+      <Filter>標頭檔\Simulator\Grasp</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Simulator\frame.h">
+      <Filter>標頭檔\Simulator\Robot</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Simulator\rnGen.h">
+      <Filter>標頭檔\Simulator\Robot</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Simulator\robot.h">
+      <Filter>標頭檔\Simulator\Robot</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Simulator\RobotArm.h">
+      <Filter>標頭檔\Simulator\Robot</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Simulator\RobotHand.h">
+      <Filter>標頭檔\Simulator\Robot</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Simulator\trajPlan.h">
+      <Filter>標頭檔\Simulator\Robot</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Simulator\ArmRRT.h">
+      <Filter>標頭檔\Simulator\Path</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Simulator\RRT.h">
+      <Filter>標頭檔\Simulator\Path</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Simulator\RRTSmoother.h">
+      <Filter>標頭檔\Simulator\Path</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Simulator\ContactSimulator.h">
+      <Filter>標頭檔\Simulator\Simulator</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Simulator\DebugDrawer.h">
+      <Filter>標頭檔\Simulator\Simulator</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Simulator\FreeGlutCallback.h">
+      <Filter>標頭檔\Simulator\Simulator</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Simulator\GlDrawcallback.h">
+      <Filter>標頭檔\Simulator\Simulator</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Simulator\GraspPlanningSimulator.h">
+      <Filter>標頭檔\Simulator\Simulator</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Simulator\Object.h">
+      <Filter>標頭檔\Simulator\Simulator</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Simulator\Simulator.h">
+      <Filter>標頭檔\Simulator\Simulator</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Simulator\TrajectoryPlanningSimulator.h">
+      <Filter>標頭檔\Simulator\Simulator</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Simulator\UISimulator.h">
+      <Filter>標頭檔\Simulator\Simulator</Filter>
+    </ClInclude>
+    <ClInclude Include="ThreadControl.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Simulator\HandArmState.h">
+      <Filter>標頭檔\Simulator\Path</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Simulator\PathPlayBack.h">
+      <Filter>標頭檔\Simulator\Path</Filter>
+    </ClInclude>
+    <ClInclude Include="src\PCL\Kinect.h">
+      <Filter>標頭檔\PCL</Filter>
+    </ClInclude>
+    <ClInclude Include="src\PCL\kinect_grabber.h">
+      <Filter>標頭檔\PCL</Filter>
+    </ClInclude>
+    <ClInclude Include="src\PCL\pcl_function.h">
+      <Filter>標頭檔\PCL</Filter>
+    </ClInclude>
+    <ClInclude Include="Calibration.h">
+      <Filter>標頭檔\MFC</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="RobotSimulatorGUI.cpp">
+      <Filter>原始程式檔\MFC</Filter>
+    </ClCompile>
+    <ClCompile Include="RobotSimulatorGUIDlg.cpp">
+      <Filter>原始程式檔\MFC</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>原始程式檔\MFC</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Simulator\EigenAssist.cpp">
+      <Filter>原始程式檔\Simulator</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Simulator\FreeGlutAssist.cpp">
+      <Filter>原始程式檔\Simulator</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Simulator\ContactInfo.cpp">
+      <Filter>原始程式檔\Simulator\Contact</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Simulator\ContactMgr.cpp">
+      <Filter>原始程式檔\Simulator\Contact</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Simulator\FrictionCone.cpp">
+      <Filter>原始程式檔\Simulator\Contact</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Simulator\GraspWrenchSpaceQualityMeasure.cpp">
+      <Filter>原始程式檔\Simulator\Contact</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Simulator\WrenchGenerator.cpp">
+      <Filter>原始程式檔\Simulator\Contact</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Simulator\GraspGenerator.cpp">
+      <Filter>原始程式檔\Simulator\Grasp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Simulator\GraspPoseGenerator.cpp">
+      <Filter>原始程式檔\Simulator\Grasp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Simulator\frame.cpp">
+      <Filter>原始程式檔\Simulator\Robot</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Simulator\rnGen.cpp">
+      <Filter>原始程式檔\Simulator\Robot</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Simulator\RoboHand.cpp">
+      <Filter>原始程式檔\Simulator\Robot</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Simulator\robot.cpp">
+      <Filter>原始程式檔\Simulator\Robot</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Simulator\RobotArm.cpp">
+      <Filter>原始程式檔\Simulator\Robot</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Simulator\trajPlan.cpp">
+      <Filter>原始程式檔\Simulator\Robot</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Simulator\ArmRRT.cpp">
+      <Filter>原始程式檔\Simulator\Path</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Simulator\RRT.cpp">
+      <Filter>原始程式檔\Simulator\Path</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Simulator\RRTSmoother.cpp">
+      <Filter>原始程式檔\Simulator\Path</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Simulator\ContactSimulator.cpp">
+      <Filter>原始程式檔\Simulator\Simulator</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Simulator\DebugDrawer.cpp">
+      <Filter>原始程式檔\Simulator\Simulator</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Simulator\GraspPlanningSimulator.cpp">
+      <Filter>原始程式檔\Simulator\Simulator</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Simulator\Object.cpp">
+      <Filter>原始程式檔\Simulator\Simulator</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Simulator\Simulator.cpp">
+      <Filter>原始程式檔\Simulator\Simulator</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Simulator\TrajectoryPlanningSimulator.cpp">
+      <Filter>原始程式檔\Simulator\Simulator</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Simulator\UISImulator.cpp">
+      <Filter>原始程式檔\Simulator\Simulator</Filter>
+    </ClCompile>
+    <ClCompile Include="ThreadControl.cpp">
+      <Filter>原始程式檔</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Simulator\HandArmState.cpp">
+      <Filter>原始程式檔\Simulator\Path</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Simulator\PathPlayBack.cpp">
+      <Filter>原始程式檔\Simulator\Path</Filter>
+    </ClCompile>
+    <ClCompile Include="src\PCL\Kinect.cpp">
+      <Filter>原始程式檔\PCL</Filter>
+    </ClCompile>
+    <ClCompile Include="src\PCL\kinect_grabber.cpp">
+      <Filter>原始程式檔\PCL</Filter>
+    </ClCompile>
+    <ClCompile Include="src\PCL\pcl_function.cpp">
+      <Filter>原始程式檔\PCL</Filter>
+    </ClCompile>
+    <ClCompile Include="Calibration.cpp">
+      <Filter>原始程式檔\MFC</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="RobotSimulatorGUI.rc">
+      <Filter>資源檔</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\RobotSimulatorGUI.rc2">
+      <Filter>資源檔</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\RobotSimulatorGUI.ico">
+      <Filter>資源檔</Filter>
+    </Image>
+  </ItemGroup>
+</Project>
